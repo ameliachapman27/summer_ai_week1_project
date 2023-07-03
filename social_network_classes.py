@@ -40,8 +40,7 @@ class Person:
         self.age = age
         self.favColor = favColor
         self.favAnimal = favAnimal
-        self.friendlist = []
-        self.blockedFriends = []
+        self.friendList = []
         self.inbox = []
 
     def add_friend(self, person_object):
