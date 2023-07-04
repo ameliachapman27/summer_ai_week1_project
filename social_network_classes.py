@@ -27,6 +27,7 @@ class SocialNetwork:
         favColor = input("Enter your favorite color: ")
         favAnimal = input("Enter your favorite animal: ")
         p1 = Person(username,name,age,favColor,favAnimal)
+        p2 = Person(username,name,age,favColor,favAnimal)
         print(f"Your name is {p1.name} and your age is {p1.age}. Your favorite color is {p1.favColor} and your favorite animal is a {p1.favAnimal}. Write down your username, {p1.username}, so you can log back in later.")
         self.listPeople.append(p1)
         self.listUsernames.append(p1.username)
@@ -46,8 +47,6 @@ class Person:
     def add_friend(self, person_object):
         person_object = input("Enter the name of a friend to add: ")
         self.friendlist.append(person_object)
-
-        
 
     def send_message(self):
         #implement sending message to friend here
